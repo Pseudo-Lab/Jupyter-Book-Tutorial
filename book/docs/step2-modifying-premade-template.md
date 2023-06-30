@@ -265,8 +265,8 @@ fig.show()
 이제 생성한 `.ipynb`파일과 `.md`파일의 목차 순서를 결정하는 `_toc.yml`파일 수정을 진행하겠다. 해당 파일을 텍스트 에디터로 열면 다음과 같은 내용이 있을 것이다. 
 
 ```
-# - file: README
-- file: docs/index
+# format: jb-article
+root: intro
   sections:
     - file: docs/about_py
     - file: docs/getting_started
@@ -277,7 +277,8 @@ fig.show()
 주석문 처리된 첫번째 줄은 삭제해도 된다. 그 다음 줄에 있는 `file` 키에 랜딩 페이지로 사용할 파일을 명시해주면 된다. 상대경로를 입력하면 되는데, `intro.md`파일이 `_toc.yml`과 같은 위치에 있으므로 `intro`를 입력해주면 된다. 여기에서 파일명은 생략한다. 
 
 ```
-- file: intro
+format: jb-article
+root: intro
   sections:
     - file: docs/about_py
     - file: docs/getting_started

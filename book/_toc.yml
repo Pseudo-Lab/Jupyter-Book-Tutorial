@@ -1,4 +1,5 @@
-- file: intro
+format: jb-article
+root: intro
   sections:
     - file: docs/step1-cloning-a-premade-template
     - file: docs/step2-modifying-premade-template
